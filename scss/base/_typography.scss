@@ -11,9 +11,27 @@
   a {
     text-decoration: none;
   }
+
+  .container {
+    margin: auto;
+  }
   
   
   /* ============================================= */
   /*              Typography                       */
   /* ============================================= */
-  
+  .search {
+    text-align: center;
+  }
+  input {
+    font-size: 1em;
+    text-align: left;
+  }
+
+  ::placeholder {
+    color: #b3b3b3;
+  }
+
+  .img-desc p {
+    text-align: center;
+}

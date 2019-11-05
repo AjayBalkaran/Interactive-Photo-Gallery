@@ -1,3 +1,33 @@
 /* ============================================= */
 /*              Images                           */
 /* ============================================= */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.gallery img {
+    width: 100%;
+    text-align: center;
+}
+
+.img-item {
+    position: relative;
+    width: 100%;
+}
+
+.img-desc {
+    position: absolute;
+    z-index: 100;
+    bottom: .2em;
+    left: 0em;
+    right: 0em;
+    color:white;
+    background: rgba(0,0,0, .6);
+}
+
+
+
