@@ -7,16 +7,34 @@
     flex-wrap: wrap;
     margin: auto;
     justify-content: space-around;
+
+    & img {
+        width: 100%;
+        text-align: center;
+    }
 }
 
-.gallery img {
-    width: 100%;
-    text-align: center;
-}
 
 .img-item {
     position: relative;
     width: 100%;
+    
+    @include mq("medium") {
+        width: 30%;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+    @include mq("large") {
+        width: 20%;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        overflow: hidden;
+
+        &:hover .img-desc {
+            transform: translateY(0)
+        }
+      }
 }
 
 .img-desc {
@@ -27,6 +45,10 @@
     right: 0em;
     color:white;
     background: rgba(0,0,0, .6);
+
+    @include mq("large") {
+        transform: translateY(150%);
+    }
 }
 
 

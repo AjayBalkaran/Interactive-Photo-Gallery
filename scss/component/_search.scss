@@ -11,4 +11,13 @@ input {
     border-radius: 5px;
     padding: .5em 1.875em .5em .223em;
     margin-top: .223em;
+
+    @include mq("medium") {
+        width: 50%;
+      }
+    
+    @include mq("large") {
+        width: 45%;
+    }
+      
 }
