@@ -5,6 +5,7 @@
     <head>
         <title>Interactive Photo Gallery</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="lightbox-chocolat/css/chocolat.css" type="text/css" media="screen" charset="utf-8">
         <link rel="stylesheet" href="css//styles.css">
     </head>
 
@@ -14,45 +15,57 @@
                 <input type="text" id="search" placeholder="Search(16pt)">
             </form>
 
-            <div class="gallery">
+            <div class="gallery chocolat-parent" data-chocolat-title="set title">
                 <!--Img 1 Hay Bales-->
                 <figure class="img-item">
-                    <img src="photos/thumbnails/01.jpg" alt="photo item">
+                    <a class="chocolat-image" href="photos/01.jpg" title="caption image 1">
+                        <img src="photos/thumbnails/01.jpg" alt="photo item">
+                    </a>
                     <figcaption class="img-desc">
                         <p>Hay Bales</p>
                     </figcaption>
                 </figure>
                 <!--Img 2 Lake-->
                 <figure class="img-item">
-                    <img src="photos/thumbnails/02.jpg" alt="photo item">
+                    <a class="chocolat-image" href="photos/02.jpg" title="caption image 1">
+                        <img src="photos/thumbnails/02.jpg" alt="photo item">
+                    </a>
                     <figcaption class="img-desc">
                         <p>Lake</p>
                     </figcaption>
                 </figure>
                 <!--Img 3 Canyon-->
                 <figure class="img-item">
-                        <img src="photos/thumbnails/03.jpg" alt="photo item">
+                        <a class="chocolat-image" href="photos/03.jpg" title="caption image 1">
+                            <img src="photos/thumbnails/03.jpg" alt="photo item">
+                        </a>
                         <figcaption class="img-desc">
                             <p>Canyon</p>
                         </figcaption>
                     </figure>
                 <!--Img 4 Iceberg-->
                 <figure class="img-item">
-                        <img src="photos/thumbnails/04.jpg" alt="photo item">
+                        <a class="chocolat-image" href="photos/04.jpg" title="caption image 1">
+                            <img src="photos/thumbnails/04.jpg" alt="photo item">
+                        </a>
                         <figcaption class="img-desc">
                             <p>Iceberg</p>
                         </figcaption>
                     </figure>
                 <!--Img 5 Desert-->
                 <figure class="img-item">
-                        <img src="photos/thumbnails/05.jpg" alt="photo item">
+                        <a class="chocolat-image" href="photos/05.jpg" title="caption image 1">
+                            <img src="photos/thumbnails/05.jpg" alt="photo item">
+                        </a>
                         <figcaption class="img-desc">
                             <p>Desert</p>
                         </figcaption>
                     </figure>
                 <!--Img 6 Fall-->
                 <figure class="img-item">
-                        <img src="photos/thumbnails/06.jpg" alt="photo item">
+                        <a class="chocolat-image" href="photos/06.jpg" title="caption image 1">
+                            <img src="photos/thumbnails/06.jpg" alt="photo item">
+                        </a>
                         <figcaption class="img-desc">
                             <p>Fall</p>
                         </figcaption>
@@ -60,42 +73,54 @@
 
                 <!--Img 7 Plantation-->
                 <figure class="img-item">
-                        <img src="photos/thumbnails/07.jpg" alt="photo item">
+                        <a class="chocolat-image" href="photos/07.jpg" title="caption image 1">
+                            <img src="photos/thumbnails/07.jpg" alt="photo item">
+                        </a>
                         <figcaption class="img-desc">
                             <p>Plantation</p>
                         </figcaption>
                     </figure>
                 <!--Img 8 Dunes-->
                 <figure class="img-item">
-                        <img src="photos/thumbnails/08.jpg" alt="photo item">
+                        <a class="chocolat-image" href="photos/08.jpg" title="caption image 1">
+                            <img src="photos/thumbnails/08.jpg" alt="photo item">
+                        </a>
                         <figcaption class="img-desc">
                             <p>Dunes</p>
                         </figcaption>
                     </figure>
                 <!--Img 9 Countryside Lane-->
                 <figure class="img-item">
-                        <img src="photos/thumbnails/09.jpg" alt="photo item">
+                        <a class="chocolat-image" href="photos/09.jpg" title="caption image 1">
+                            <img src="photos/thumbnails/09.jpg" alt="photo item">
+                        </a>
                         <figcaption class="img-desc">
                             <p>Countryside Lane</p>
                         </figcaption>
                     </figure>
                 <!--Img 10 Sunset-->
                 <figure class="img-item">
-                        <img src="photos/thumbnails/10.jpg" alt="photo item">
+                        <a class="chocolat-image" href="photos/10.jpg" title="caption image 1">
+                            <img src="photos/thumbnails/10.jpg" alt="photo item">
+                        </a>
                         <figcaption class="img-desc">
                             <p>Sunset</p>
                         </figcaption>
                     </figure>
                 <!--Img 11 Cave-->
                 <figure class="img-item">
-                        <img src="photos/thumbnails/11.jpg" alt="photo item">
+                        <a class="chocolat-image" href="photos/11.jpg" title="caption image 1">
+                            <img src="photos/thumbnails/11.jpg" alt="photo item">
+                        </a>
                         <figcaption class="img-desc">
                             <p>Cave</p>
                         </figcaption>
                     </figure>
                 <!--Img 12 Bluebells-->
                 <figure class="img-item">
-                        <img src="photos/thumbnails/12.jpg" alt="photo item">
+                        <a class="chocolat-image" href="photos/12.jpg" title="caption image 1">
+                            <img src="photos/thumbnails/12.jpg" alt="photo item">
+                        </a>
                         <figcaption class="img-desc">
                             <p>Bluebells</p>
                         </figcaption>
@@ -103,5 +128,6 @@
             </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="lightbox-chocolat/js/jquery.chocolat.min.js"></script>
     </body>
 </html>
