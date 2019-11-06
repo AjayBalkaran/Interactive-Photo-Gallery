@@ -412,7 +412,7 @@ input {
 
 .img-desc {
   position: absolute;
-  z-index: 100;
+  z-index: 9;
   bottom: 0.2em;
   left: 0em;
   right: 0em;
@@ -422,6 +422,50 @@ input {
 @media (min-width: 64rem) {
   .img-desc {
     transform: translateY(150%);
+  }
+}
+
+/******************************************
+    Chocolat Lightbox JQuery Plugin
+******************************************/
+.chocolat-overlay {
+  background-color: black;
+}
+
+.chocolat-bottom {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+@media (min-width: 48rem) {
+  .chocolat-bottom {
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+}
+.chocolat-description {
+  color: white;
+  text-align: center;
+}
+@media (min-width: 48rem) {
+  .chocolat-description {
+    width: 90%;
+  }
+}
+@media (min-width: 48rem) {
+  .chocolat-pagination {
+    width: 5%;
+  }
+}
+@media (min-width: 48rem) {
+  .chocolat .chocolat-fullscreen {
+    width: 5%;
+  }
+}
+@media (min-width: 48rem) {
+  .chocolat-wrapper .chocolat-pagination {
+    margin: 0;
+    padding: 0;
   }
 }
 
